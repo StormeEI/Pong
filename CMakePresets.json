@@ -1,0 +1,30 @@
+{
+    "version": 8,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 30
+    },
+
+    "configurePresets": [
+        {
+            "name": "default-debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/build/debug/bin"
+            }
+        }
+    ],
+
+    "buildPresets": [
+        {
+            "name": "build-debug",
+            "configurePreset": "default-debug",
+            "description": "Build with Ninja/clang Stack in Debug",
+            "jobs": 4
+        }
+    ]
+}
