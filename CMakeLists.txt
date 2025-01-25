@@ -10,7 +10,7 @@ add_subdirectory(external/raylib)
 
 file(GLOB SOURCES "src/*.c")
 
-add_executable(Pong ${Sources})
+add_executable(Pong ${SOURCES})
 
 target_include_directories(Pong PRIVATE include)
 
