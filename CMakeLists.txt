@@ -8,9 +8,10 @@ set(BUILD_SHARED_LIBS OFF CACHE BOOL "BUILD STATIC" FORCE)
 
 add_subdirectory(external/raylib)
 
-add_executable(Pong src/main.c)
+file(GLOB SOURCES "src/*.c")
+
+add_executable(Pong ${Sources})
 
 target_include_directories(Pong PRIVATE include)
 
 target_link_libraries(Pong raylib)
-
