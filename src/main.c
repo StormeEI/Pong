@@ -12,9 +12,3 @@ int main() {
     CloseWindow();
     return 0;
 }
-
-/*if(WIN32)
-    target_link_libraries(Pong Winmn.lib)
-elseif(UNIX)
-    target_link_libraries(Pong m pthread dl)
-endif()*/
