@@ -20,8 +20,8 @@ typedef struct Ball {
  * Creates a new game ball
  * @param x X Position of the ball
  * @param y y Position of the ball
- * @param width Internal width of the ball
- * @param height Internal height of the ball
+ * @param xV speed of ball in x direction
+ * @param yV speed of ball in y direction
  * @param color Color of the ball
  * 
  * @returns A pointer to the ball

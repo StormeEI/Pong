@@ -1,21 +1,20 @@
 #include "paddle.h"
 
-Paddle* createPaddle(int x, int y, int yV, Color color) {
-    Paddle p;
-    p.x = x;
-    p.y = y;
-    p.yV = yV;
-    p.color = color;
+Paddle* createPaddle(int x, int y, int yV, int width, int height, Color color) {
+    Paddle paddle;
+    paddle.x = x;
+    paddle.y = y;
+    paddle.yV = yV;
+    paddle.width = width;
+    paddle.height = height;
+    paddle.color = color;
 }
 
-void movePaddle() {
-
+void movePaddle(Paddle* paddle) {
+    paddle->y += paddle->yV;
 }
 
-void hitBall() {
-
-}
-
-void setPaddlePosition() {
-
+void setPaddlePosition(Paddle* paddle, int x, int y) {
+    paddle->x = x;
+    paddle->y = y;
 }
