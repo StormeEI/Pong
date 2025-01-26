@@ -16,12 +16,14 @@ void drawBall(Ball* ball) {
     DrawCircle(ball->x, ball->y, ball->radius, ball->color);
 }
 
-void updateBall() {
-    
+void updateBall(Ball* ball) {
+    ball->x += ball->xV;
+    ball->y += ball->yV;
 }
 
 void setBallPosition(Ball* ball, int x, int  y) {
-    
+    ball->x = x;
+    ball->y = y;
 }
 
 void setSpeed(Ball* ball, int xV, int yV) {

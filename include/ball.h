@@ -20,8 +20,8 @@ typedef struct Ball {
  * Creates a new game ball
  * @param x X Position of the ball
  * @param y y Position of the ball
- * @param width Internal width of the ball
- * @param height Internal height of the ball
+ * @param xV speed of ball in x direction
+ * @param yV speed of ball in y direction
  * @param color Color of the ball
  * 
  * @returns A pointer to the ball
@@ -30,7 +30,7 @@ Ball* createBall(int x, int y, int xV, int yV, int radius, Color color);
 
 void drawBall(Ball* ball);
 
-void updateBall();
+void updateBall(Ball* ball);
 
 void setPositionBall(Ball* ball, int x, int  y);
 

@@ -8,14 +8,15 @@ Paddle* createPaddle(int x, int y, int yV, Color color) {
     p.color = color;
 }
 
-void movePaddle() {
-
+void movePaddle(Paddle* p) {
+    p->y += p->yV
 }
 
 void hitBall() {
 
 }
 
-void setPaddlePosition() {
-
+void setPaddlePosition(Paddle* p, int x, int y) {
+    p->x = x;
+    p->y = y;
 }
