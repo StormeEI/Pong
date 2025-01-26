@@ -21,8 +21,8 @@ typedef struct Paddle {
  */
 Paddle* createPaddle(int x, int y, int yV, Color color);
 
-void movePaddle();
-void hitBall();
-void setPaddlePosition();
+void movePaddle(Paddle* paddle);
+void drawPaddle(Paddle* paddle);
+void setPaddlePosition(Paddle* paddle);
 
 #endif //PADDLE_H

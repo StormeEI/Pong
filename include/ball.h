@@ -30,7 +30,7 @@ Ball* createBall(int x, int y, int xV, int yV, int radius, Color color);
 
 void drawBall(Ball* ball);
 
-void updateBall();
+void updateBall(Ball* ball);
 
 void setPositionBall(Ball* ball, int x, int  y);
 
